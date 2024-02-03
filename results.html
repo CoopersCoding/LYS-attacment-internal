@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Last Year Single P.A.T.H. Survey/ Results</title>
+    <title>LYS Attachment Survey Results</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <header>
-    <h1 class="title">LAST YEAR SINGLE P.A.T.H. SURVEY RESULTS</h1>
+    <h1 class="title">LAST YEAR SINGLE ATTACHMENT SURVEY RESULTS</h1>
   </header>
   <body>
 <div id="result"></div>
@@ -19,7 +19,7 @@
 -->
     
 <div class="result-container">
-  <p><u><strong><span class="path-title">Path 1 - Relationship with God Summary</span></strong></u> 
+  <p><u><strong><span class="path-title">Anxious Attachment Style</span></strong></u> 
     <br>
     If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with God.  
   
@@ -42,7 +42,7 @@
     &#x2022; Understand the character of God and who He is.
   </p>
     
-  <p><u><strong><span class="path-title">Path 2 - Relationship with Self Summary</span></strong></u>
+  <p><u><strong><span class="path-title">Secure Attachment Style</span></strong></u>
     <br>
     If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with yourself.   
   <br>
@@ -76,7 +76,7 @@
     &#x2022; Prioritize self-care both physically and mentally to build a healthier and happier you
   </p>
 
-  <p><u><strong><span class="path-title">Path 3 - Relationship with Others Summary</span></strong></u> 
+  <p><u><strong><span class="path-title">Avoidant Attachment Style</span></strong></u> 
     <br>
     If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with others.    
   <br>
@@ -100,60 +100,34 @@
     &#x2022; Get to the root of people pleasing to prevent burnout and resentment
   </p>
 
-  <p><u><strong><span class="path-title">Path 4 - VIP Membership Summary</span></strong></u> 
-    <br>
-    If you received this Path recommendation, your score indicates that you may be a candidate for our new VIP Membership program.  Please email: <span class="email">admin@jackiedorman.com</span> for more information and include "VIP" in the subject line.
-  </p>
+  
 </div>
 <div id="retakeQuizBtn"></div>
         <!-- button to retake the quiz and redirect to index.html -->
         <form action="index.html"><button class="submit-btn" type="submit">Retake Quiz</button>
       </form>
 <footer>
-  <div class="footer">Last Year Single P.A.T.H. Survey Results</div>
+  <div class="footer">Last Year Single Attachment Survey Results</div>
 </footer>
 
 <script>
-/*  --this formula is a single result algorithm--
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Retrieve the results from session storage
-    var maxAnswers = JSON.parse(sessionStorage.getItem("maxAnswers"));
-  
-    // Display the results
-    var resultContainer = document.getElementById("result");
-    if (maxAnswers.length === 1) {
-      resultContainer.textContent = "Congratulations! Sign up now for the " + maxAnswers[0] + " path!";
-    } else {
-      resultContainer.textContent = "Please make sure that you answer all the questions to receive your results.";
-      for (var i = 0; i < maxAnswers.length; i++) {
-        var listItem = document.createElement("li");
-        listItem.textContent = maxAnswers[i];
-        listElement.appendChild(listItem);
-      }
-      resultContainer.appendChild(listElement);
-    }
-  
-    // Clear the stored results from session storage
-    sessionStorage.removeItem("maxAnswers");
-  });
- */
  document.addEventListener("DOMContentLoaded", function() {
   // Retrieve the results from session storage
   var maxAnswers = JSON.parse(sessionStorage.getItem("maxAnswers"));
 
   // Display the results
   var resultContainer = document.getElementById("result");
-  if (maxAnswers.length === 1) {
-    resultContainer.textContent = "Congratulations! Your survey result is : " + maxAnswers[0] + "!";
-  } else {
-    resultContainer.textContent = "Congratulations! Your survey result is:";
+if (maxAnswers.length === 1) {
+    resultContainer.textContent = "You have completed the quiz. Your Attachment Style is: " + maxAnswers[0];
+} else {
+    resultContainer.textContent = "You have completed the quiz. Your Attachment Style is:";
     for (var i = 0; i < 1; i++) { // Change the condition from maxAnswers.length to 2
-      var listItem = document.createElement("li");
-      listItem.textContent = maxAnswers[i];
-      resultContainer.appendChild(listItem);
+        var listItem = document.createElement("li");
+        listItem.textContent = maxAnswers[i];
+        resultContainer.appendChild(listItem);
     }
-  }
+}
 
   // Clear the stored results from session storage
   //sessionStorage.removeItem("maxAnswers"); 
