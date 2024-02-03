@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Last Year Single P.A.T.H. Survey/ Results</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header>
+    <h1 class="title">LAST YEAR SINGLE P.A.T.H. SURVEY RESULTS</h1>
+  </header>
+  <body>
+<div id="result"></div>
+<div class="path-description">Our recommendation to you is to stick with the first results the quiz reveals to you.</div>
+<!-- <button id="pathButton" class="submit-btn" type="button" onclick="window.location.href='https://jackiedorman.com/'">Go to Path Website</button> 
+-->
+    
+<div class="result-container">
+  <p><u><strong><span class="path-title">Path 1 - Relationship with God Summary</span></strong></u> 
+    <br>
+    If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with God.  
+  
+    Following the Relationship with God path is an invitation to strengthen your relationship with God.  Your relationship with the Father is foundational for all other relationships.  
+    <br> 
+    <br>
+    On this path you will learn how to:
+    <br>
+    <br>
+    &#x2022; Hear God more clearly and more often
+    <br>
+    &#x2022; Stop striving to be accepted by God and start thriving in His unconditional love
+    <br>
+    &#x2022; Overcome orphan or poverty mentalities that are holding you back from an abundant life
+    <br>
+    &#x2022; Get free from religious mindsets like condemnation, guilt, and fear and live in the finished work of the cross.
+    <br>
+    &#x2022; Rebuild your identity as a son/daughter of God so you can fulfill the good plans God has for your life.
+    <br>
+    &#x2022; Understand the character of God and who He is.
+  </p>
+    
+  <p><u><strong><span class="path-title">Path 2 - Relationship with Self Summary</span></strong></u>
+    <br>
+    If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with yourself.   
+  <br>
+  <br>
+  Following the Relationship with Self path is an invitation to grow in confidence in who you are and how you represent yourself to the world.  
+    <br> 
+    <br>
+    On this path you will grow in the following areas:
+    <br>
+    <br>
+    &#x2022; Become more self-aware and self-accepting
+    <br>
+    &#x2022; Learn how to be kind to yourself and silence your inner critic
+    <br>
+    &#x2022; Cultivate a healthy self image
+    <br>
+    &#x2022; Cultivate a healthy weight/BMI
+    <br>
+    &#x2022; Learn about your unique personality and how to optimize it for better relationships
+    <br>
+    &#x2022; Create a personal brand
+    <br>
+    <span class="result-indent">1. Learn how to represent your best self to the world</span>
+    <br>
+    <span class="result-indent">2. Learn how to communicate</span>
+    <br>
+    <span class="result-indent">3. Learn how to dress</span>
+    <br>
+    <span class="result-indent">4. Hone your personal style</span>
+    <br>
+    &#x2022; Prioritize self-care both physically and mentally to build a healthier and happier you
+  </p>
+
+  <p><u><strong><span class="path-title">Path 3 - Relationship with Others Summary</span></strong></u> 
+    <br>
+    If you received this Path recommendation, your score indicates that the area where you may be currently stuck in is your relationship with others.    
+  <br>
+  <br>
+  Following the Relationship with Others path is an invitation to grow in connection with others so you can live an interdependent and abundant life. 
+    <br> 
+    <br>
+    On this path you will grow in the following areas:
+    <br>
+    <br>
+    &#x2022; Strengthen your boundaries to attract higher quality people 
+    <br>
+    &#x2022; Cultivate your communication skills so you can be confident talking with anyone
+    <br>
+    &#x2022; Heal relationships with family and friends
+    <br>
+    &#x2022; Learn how to create meaningful connections with others
+    <br>
+    &#x2022; Overcome jealousy, comparison, and judgment
+    <br>
+    &#x2022; Get to the root of people pleasing to prevent burnout and resentment
+  </p>
+
+  <p><u><strong><span class="path-title">Path 4 - VIP Membership Summary</span></strong></u> 
+    <br>
+    If you received this Path recommendation, your score indicates that you may be a candidate for our new VIP Membership program.  Please email: <span class="email">admin@jackiedorman.com</span> for more information and include "VIP" in the subject line.
+  </p>
+</div>
+<div id="retakeQuizBtn"></div>
+        <!-- button to retake the quiz and redirect to index.html -->
+        <form action="index.html"><button class="submit-btn" type="submit">Retake Quiz</button>
+      </form>
+<footer>
+  <div class="footer">Last Year Single P.A.T.H. Survey Results</div>
+</footer>
+
+<script>
+/*  --this formula is a single result algorithm--
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Retrieve the results from session storage
+    var maxAnswers = JSON.parse(sessionStorage.getItem("maxAnswers"));
+  
+    // Display the results
+    var resultContainer = document.getElementById("result");
+    if (maxAnswers.length === 1) {
+      resultContainer.textContent = "Congratulations! Sign up now for the " + maxAnswers[0] + " path!";
+    } else {
+      resultContainer.textContent = "Please make sure that you answer all the questions to receive your results.";
+      for (var i = 0; i < maxAnswers.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = maxAnswers[i];
+        listElement.appendChild(listItem);
+      }
+      resultContainer.appendChild(listElement);
+    }
+  
+    // Clear the stored results from session storage
+    sessionStorage.removeItem("maxAnswers");
+  });
+ */
+ document.addEventListener("DOMContentLoaded", function() {
+  // Retrieve the results from session storage
+  var maxAnswers = JSON.parse(sessionStorage.getItem("maxAnswers"));
+
+  // Display the results
+  var resultContainer = document.getElementById("result");
+  if (maxAnswers.length === 1) {
+    resultContainer.textContent = "Congratulations! Your survey result is : " + maxAnswers[0] + "!";
+  } else {
+    resultContainer.textContent = "Congratulations! Your survey result is:";
+    for (var i = 0; i < 1; i++) { // Change the condition from maxAnswers.length to 2
+      var listItem = document.createElement("li");
+      listItem.textContent = maxAnswers[i];
+      resultContainer.appendChild(listItem);
+    }
+  }
+
+  // Clear the stored results from session storage
+  //sessionStorage.removeItem("maxAnswers"); 
+
+
+});
+
+</script>
+  </body>

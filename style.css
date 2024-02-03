@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F6F2;
+  }
+
+h1 {
+    font-family: 'karla', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F8F6F2;
+    background-color: #E4574F;
+    margin-top: 20px;
+    padding: 20px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    
+}
+
+.a {
+    font-size: 25px;
+    color: #F8F6F2;
+    background-color: #E4574F;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.path-container {
+    padding: 5px;
+    max-width: 720px;
+    margin: auto;
+}
+
+div.path-description {
+    text-align: center;
+    font-size: large;
+}
+
+.result-indent {
+  padding-left: 50px;
+}
+
+p {
+    font-family: 'karla', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    width: 80%;
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #E4574F;
+    color: white;
+}
+
+.question {
+    font-family: 'karla';
+    /* font in all caps */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    color: #F8F6F2;
+    background-color: #E4574F;
+    
+    font-size: 16px;
+}
+  
+.container {
+    max-width: 720px;
+    padding: 20px;
+  }
+
+  .result-container {
+    padding-bottom: 50px;
+    
+  }
+
+
+
+.options {
+    padding-left: 30px;
+}
+
+  .options label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.link {
+    color: #331C33;
+    text-decoration: none;
+    font-family: 'karla', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+  }
+
+.submit-btn {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #F8F6F2;
+    text-transform: uppercase;
+    background-color: #64898D;
+    border: 1px solid #777;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+  }
+
+
+  .submit-btn:hover {
+    background-color: #777;
+  }
+
+  #result {
+    margin: 20px auto 0px; 
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(156, 69, 65);
+  }
+
+.footer {
+    font-family: 'karla', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #F8F6F2;
+    letter-spacing: 2.5px;
+    padding: 20px;
+    background-color: #E4574F;
+    color: white;
+  }
+
+  .path-description {
+    background-color: #F8F6F2;
+    color: #0f0f0f;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  .email {
+    font-weight: 700;
+    color: #212829;
+  }
+
+  .path-title {
+    font-size: 25px;
+  }
