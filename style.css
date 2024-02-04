@@ -8,18 +8,19 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     color: #F8F6F2;
-    background-color: #E4574F;
+    background-color: #64898d;
     margin-top: 20px;
     padding: 20px;
     letter-spacing: 2.5px;
     text-align: center;
+    box-shadow: #6e6969 5px 5px 5px;
     
 }
 
 .a {
     font-size: 25px;
     color: #F8F6F2;
-    background-color: #E4574F;
+    background-color: #64898d;
     font-weight: bold;
     font-family: monospace;
 }
@@ -48,8 +49,10 @@ p {
     max-width: 720px;
     margin: 20px auto;
     padding: 20px 30px;
-    background-color: #E4574F;
+    background-color: #64898d;
     color: white;
+    border-radius: 10px;
+    box-shadow: #6e6969 5px 5px 5px;
 }
 
 .question {
@@ -59,7 +62,10 @@ p {
     margin-bottom: 20px;
     padding: 20px 30px;
     color: #F8F6F2;
-    background-color: #E4574F;
+    background-color: #64898d;
+    border-radius: 10px;
+    box-shadow: #6e6969 5px 5px 5px;
+    
     
     font-size: 16px;
 }
@@ -67,6 +73,7 @@ p {
 .container {
     max-width: 720px;
     padding: 20px;
+    
   }
 
   .result-container {
@@ -101,11 +108,13 @@ p {
     padding: 10px 20px;
     color: #F8F6F2;
     text-transform: uppercase;
-    background-color: #64898D;
+    background-color: #e77b6f;
     border: 1px solid #777;
     font-family: inherit;
     font-size: 21px;
     display: block;
+    border-radius: 10px;
+    box-shadow: #6e6969 5px 5px 5px;
   }
 
 
@@ -119,7 +128,7 @@ p {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    color: rgb(156, 69, 65);
+    color: #64898d;
   }
 
 .footer {
@@ -129,8 +138,9 @@ p {
     color: #F8F6F2;
     letter-spacing: 2.5px;
     padding: 20px;
-    background-color: #E4574F;
+    background-color: #64898d;
     color: white;
+    box-shadow: #6e6969 5px 5px 5px;
   }
 
   .path-description {
