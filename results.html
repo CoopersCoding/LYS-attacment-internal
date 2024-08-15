@@ -14,9 +14,11 @@
   </header>
   <body>
 <div id="result"></div>
-<div class="path-description">Our recommendation to you is to stick with the first results the quiz reveals to you.</div>
+
+<!-- <div class="path-description">Our recommendation to you is to stick with the first results the quiz reveals to you.</div> -->
+
 <!-- <button id="pathButton" class="submit-btn" type="button" onclick="window.location.href='https://jackiedorman.com/'">Go to Path Website</button> 
--->
+
     
 <div class="result-container">
   <div class="path-container">
@@ -41,7 +43,7 @@
     It is very important for you to maintain your independence and you often prefer autonomy to deep relationships. Even though you do want to be close to others, you feel uncomfortable with too much closeness, and tend to keep others at arms length. You tend not to open up to others and remain emotionally distant in romantic relationships, and you are often on high alert for any signs of being controlled.
   </p>
 </div>
-  
+-->
 </div>
 <div id="retakeQuizBtn"></div>
         <!-- button to retake the quiz and redirect to index.html -->
@@ -53,22 +55,44 @@
 
 <script>
 
- document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   // Retrieve the results from session storage
   var maxAnswers = JSON.parse(sessionStorage.getItem("maxAnswers"));
 
-  // Display the results
-  var resultContainer = document.getElementById("result");
-if (maxAnswers.length === 1) {
-    resultContainer.textContent = "You have completed the quiz. Your Attachment Style is: " + maxAnswers[0];
-} else {
-    resultContainer.textContent = "You have completed the quiz. Your Attachment Style is:";
-    for (var i = 0; i < 1; i++) { // Change the condition from maxAnswers.length to 2
-        var listItem = document.createElement("li");
-        listItem.textContent = maxAnswers[i];
-        resultContainer.appendChild(listItem);
+// Display the results
+var resultContainer = document.getElementById("result");
+  if (maxAnswers.length === 1) {
+    if (maxAnswers[0] === "Anxious") {
+      resultContainer.innerHTML = `
+        You have completed the quiz. Your Attachment Style is:
+        <p style="text-align: center;">ANXIOUS ATTACHMENT STYLE</p>
+        
+        <p>You love to be very close to others, and have the capacity for great intimacy, you often fear, however, that others don’t wish to be as close as you would like them to be. Relationships tend to consume a large part of your emotional energy and you can be very sensitive to small fluctuations, in other’s, moods, and actions. Often taking them personally resulting in fear of abandonment or rejection which can make you say and do things you regret.</p>
+      `;
+    } else if (maxAnswers[0] === "Secure") {
+      resultContainer.innerHTML = `
+        You have completed the quiz. Your Attachment Style is:
+        <p style="text-align: center;">SECURE ATTACHMENT STYLE</p>
+
+        <p>Being warm and loving in relationships comes naturally to you. You enjoy having deep connections without becoming overly worried about rejection. You effectively communicate your needs and feelings to others, and are strong at reading other’s emotional cues and responding to them appropriately.</p>
+      `;
+    } else if (maxAnswers[0] === "Avoidant") {
+      resultContainer.innerHTML = `
+        You have completed the quiz. Your Attachment Style is:
+        <p style="text-align: center;">AVOIDANT ATTACHMENT STYLE</p>
+        <p>It is very important for you to maintain your independence and you often prefer autonomy to deep relationships. Even though you do want to be close to others, you feel uncomfortable with too much closeness, and tend to keep others at arms length. You tend not to open up to others and remain emotionally distant in romantic relationships, and you are often on high alert for any signs of being controlled.</p>
+      `;
+    } else {
+      resultContainer.textContent = "You have completed the quiz. Your Attachment Style is: " + maxAnswers[0];
     }
-}
+  } else {
+    resultContainer.textContent = "You have completed the quiz. Your Attachment Style is:";
+    for (var i = 0; i < 1; i++) { 
+      var listItem = document.createElement("li");
+      listItem.textContent = maxAnswers[i];
+      resultContainer.appendChild(listItem);
+    }
+  }
 
   // Clear the stored results from session storage
   //sessionStorage.removeItem("maxAnswers"); 
